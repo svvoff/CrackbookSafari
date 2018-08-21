@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9537E987212C25C800402326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E986212C25C800402326 /* AppDelegate.swift */; };
+		9537E989212C25C800402326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E988212C25C800402326 /* ViewController.swift */; };
+		9537E98B212C25CA00402326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9537E98A212C25CA00402326 /* Assets.xcassets */; };
+		9537E98E212C25CA00402326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9537E98C212C25CA00402326 /* Main.storyboard */; };
+		9537E99A212C25CA00402326 /* Web_page_delayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E999212C25CA00402326 /* Web_page_delayTests.swift */; };
+		9537E9AB212C25F000402326 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9537E9AA212C25F000402326 /* Cocoa.framework */; };
+		9537E9AE212C25F000402326 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E9AD212C25F000402326 /* SafariExtensionHandler.swift */; };
+		9537E9B0212C25F000402326 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E9AF212C25F000402326 /* SafariExtensionViewController.swift */; };
+		9537E9B3212C25F000402326 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9537E9B1212C25F000402326 /* SafariExtensionViewController.xib */; };
+		9537E9B6212C25F000402326 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 9537E9B5212C25F000402326 /* script.js */; };
+		9537E9B8212C25F000402326 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9537E9B7212C25F000402326 /* ToolbarItemIcon.pdf */; };
+		9537E9BC212C25F000402326 /* Web delay.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9537E9A8212C25F000402326 /* Web delay.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9537E996212C25CA00402326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9537E97B212C25C800402326 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9537E982212C25C800402326;
+			remoteInfo = "Web page delay";
+		};
+		9537E9BA212C25F000402326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9537E97B212C25C800402326 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9537E9A7212C25F000402326;
+			remoteInfo = "Web delay";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9537E9C0212C25F000402326 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9537E9BC212C25F000402326 /* Web delay.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9537E983212C25C800402326 /* Web page delay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web page delay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9537E986212C25C800402326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9537E988212C25C800402326 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9537E98A212C25CA00402326 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9537E98D212C25CA00402326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9537E98F212C25CA00402326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9537E990212C25CA00402326 /* Web_page_delay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Web_page_delay.entitlements; sourceTree = "<group>"; };
+		9537E995212C25CA00402326 /* Web page delayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Web page delayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9537E999212C25CA00402326 /* Web_page_delayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web_page_delayTests.swift; sourceTree = "<group>"; };
+		9537E99B212C25CA00402326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9537E9A8212C25F000402326 /* Web delay.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Web delay.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9537E9AA212C25F000402326 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9537E9AD212C25F000402326 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		9537E9AF212C25F000402326 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		9537E9B2212C25F000402326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		9537E9B4212C25F000402326 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9537E9B5212C25F000402326 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		9537E9B7212C25F000402326 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		9537E9B9212C25F000402326 /* Web_delay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Web_delay.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9537E980212C25C800402326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537E992212C25CA00402326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537E9A5212C25F000402326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9537E9AB212C25F000402326 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9537E97A212C25C800402326 = {
+			isa = PBXGroup;
+			children = (
+				9537E985212C25C800402326 /* Web page delay */,
+				9537E998212C25CA00402326 /* Web page delayTests */,
+				9537E9AC212C25F000402326 /* Web delay */,
+				9537E9A9212C25F000402326 /* Frameworks */,
+				9537E984212C25C800402326 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9537E984212C25C800402326 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9537E983212C25C800402326 /* Web page delay.app */,
+				9537E995212C25CA00402326 /* Web page delayTests.xctest */,
+				9537E9A8212C25F000402326 /* Web delay.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9537E985212C25C800402326 /* Web page delay */ = {
+			isa = PBXGroup;
+			children = (
+				9537E986212C25C800402326 /* AppDelegate.swift */,
+				9537E988212C25C800402326 /* ViewController.swift */,
+				9537E98A212C25CA00402326 /* Assets.xcassets */,
+				9537E98C212C25CA00402326 /* Main.storyboard */,
+				9537E98F212C25CA00402326 /* Info.plist */,
+				9537E990212C25CA00402326 /* Web_page_delay.entitlements */,
+			);
+			path = "Web page delay";
+			sourceTree = "<group>";
+		};
+		9537E998212C25CA00402326 /* Web page delayTests */ = {
+			isa = PBXGroup;
+			children = (
+				9537E999212C25CA00402326 /* Web_page_delayTests.swift */,
+				9537E99B212C25CA00402326 /* Info.plist */,
+			);
+			path = "Web page delayTests";
+			sourceTree = "<group>";
+		};
+		9537E9A9212C25F000402326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9537E9AA212C25F000402326 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9537E9AC212C25F000402326 /* Web delay */ = {
+			isa = PBXGroup;
+			children = (
+				9537E9AD212C25F000402326 /* SafariExtensionHandler.swift */,
+				9537E9AF212C25F000402326 /* SafariExtensionViewController.swift */,
+				9537E9B1212C25F000402326 /* SafariExtensionViewController.xib */,
+				9537E9B4212C25F000402326 /* Info.plist */,
+				9537E9B5212C25F000402326 /* script.js */,
+				9537E9B7212C25F000402326 /* ToolbarItemIcon.pdf */,
+				9537E9B9212C25F000402326 /* Web_delay.entitlements */,
+			);
+			path = "Web delay";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9537E982212C25C800402326 /* Web page delay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9537E99E212C25CA00402326 /* Build configuration list for PBXNativeTarget "Web page delay" */;
+			buildPhases = (
+				9537E97F212C25C800402326 /* Sources */,
+				9537E980212C25C800402326 /* Frameworks */,
+				9537E981212C25C800402326 /* Resources */,
+				9537E9C0212C25F000402326 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9537E9BB212C25F000402326 /* PBXTargetDependency */,
+			);
+			name = "Web page delay";
+			productName = "Web page delay";
+			productReference = 9537E983212C25C800402326 /* Web page delay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9537E994212C25CA00402326 /* Web page delayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9537E9A1212C25CA00402326 /* Build configuration list for PBXNativeTarget "Web page delayTests" */;
+			buildPhases = (
+				9537E991212C25CA00402326 /* Sources */,
+				9537E992212C25CA00402326 /* Frameworks */,
+				9537E993212C25CA00402326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9537E997212C25CA00402326 /* PBXTargetDependency */,
+			);
+			name = "Web page delayTests";
+			productName = "Web page delayTests";
+			productReference = 9537E995212C25CA00402326 /* Web page delayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9537E9A7212C25F000402326 /* Web delay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9537E9BD212C25F000402326 /* Build configuration list for PBXNativeTarget "Web delay" */;
+			buildPhases = (
+				9537E9A4212C25F000402326 /* Sources */,
+				9537E9A5212C25F000402326 /* Frameworks */,
+				9537E9A6212C25F000402326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Web delay";
+			productName = "Web delay";
+			productReference = 9537E9A8212C25F000402326 /* Web delay.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9537E97B212C25C800402326 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Andrey Sorokin";
+				TargetAttributes = {
+					9537E982212C25C800402326 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					9537E994212C25CA00402326 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 9537E982212C25C800402326;
+					};
+					9537E9A7212C25F000402326 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9537E97E212C25C800402326 /* Build configuration list for PBXProject "Web page delay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9537E97A212C25C800402326;
+			productRefGroup = 9537E984212C25C800402326 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9537E982212C25C800402326 /* Web page delay */,
+				9537E994212C25CA00402326 /* Web page delayTests */,
+				9537E9A7212C25F000402326 /* Web delay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9537E981212C25C800402326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9537E98B212C25CA00402326 /* Assets.xcassets in Resources */,
+				9537E98E212C25CA00402326 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537E993212C25CA00402326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537E9A6212C25F000402326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9537E9B8212C25F000402326 /* ToolbarItemIcon.pdf in Resources */,
+				9537E9B3212C25F000402326 /* SafariExtensionViewController.xib in Resources */,
+				9537E9B6212C25F000402326 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9537E97F212C25C800402326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9537E989212C25C800402326 /* ViewController.swift in Sources */,
+				9537E987212C25C800402326 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537E991212C25CA00402326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9537E99A212C25CA00402326 /* Web_page_delayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9537E9A4212C25F000402326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9537E9B0212C25F000402326 /* SafariExtensionViewController.swift in Sources */,
+				9537E9AE212C25F000402326 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9537E997212C25CA00402326 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9537E982212C25C800402326 /* Web page delay */;
+			targetProxy = 9537E996212C25CA00402326 /* PBXContainerItemProxy */;
+		};
+		9537E9BB212C25F000402326 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9537E9A7212C25F000402326 /* Web delay */;
+			targetProxy = 9537E9BA212C25F000402326 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9537E98C212C25CA00402326 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9537E98D212C25CA00402326 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9537E9B1212C25F000402326 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9537E9B2212C25F000402326 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9537E99C212C25CA00402326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9537E99D212C25CA00402326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9537E99F212C25CA00402326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Web page delay/Web_page_delay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SQ8J67F9NL;
+				INFOPLIST_FILE = "Web page delay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.andreysorokin.Web-page-delay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		9537E9A0212C25CA00402326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Web page delay/Web_page_delay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SQ8J67F9NL;
+				INFOPLIST_FILE = "Web page delay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.andreysorokin.Web-page-delay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		9537E9A2212C25CA00402326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SQ8J67F9NL;
+				INFOPLIST_FILE = "Web page delayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.andreysorokin.Web-page-delayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Web page delay.app/Contents/MacOS/Web page delay";
+			};
+			name = Debug;
+		};
+		9537E9A3212C25CA00402326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SQ8J67F9NL;
+				INFOPLIST_FILE = "Web page delayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.andreysorokin.Web-page-delayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Web page delay.app/Contents/MacOS/Web page delay";
+			};
+			name = Release;
+		};
+		9537E9BE212C25F000402326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Web delay/Web_delay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8J67F9NL;
+				INFOPLIST_FILE = "Web delay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.andreysorokin.Web-page-delay.Web-delay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		9537E9BF212C25F000402326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Web delay/Web_delay.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQ8J67F9NL;
+				INFOPLIST_FILE = "Web delay/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.andreysorokin.Web-page-delay.Web-delay";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9537E97E212C25C800402326 /* Build configuration list for PBXProject "Web page delay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537E99C212C25CA00402326 /* Debug */,
+				9537E99D212C25CA00402326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9537E99E212C25CA00402326 /* Build configuration list for PBXNativeTarget "Web page delay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537E99F212C25CA00402326 /* Debug */,
+				9537E9A0212C25CA00402326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9537E9A1212C25CA00402326 /* Build configuration list for PBXNativeTarget "Web page delayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537E9A2212C25CA00402326 /* Debug */,
+				9537E9A3212C25CA00402326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9537E9BD212C25F000402326 /* Build configuration list for PBXNativeTarget "Web delay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9537E9BE212C25F000402326 /* Debug */,
+				9537E9BF212C25F000402326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9537E97B212C25C800402326 /* Project object */;
+}
