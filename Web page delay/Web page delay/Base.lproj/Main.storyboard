@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.13.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Web_page_delay" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -703,15 +705,55 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Web_page_delay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="336"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Hqs-nl-whl">
+                                <rect key="frame" x="123" y="289" width="234" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="4qT-Rn-Ael"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to WebDelay" id="Qzx-36-ibt">
+                                    <font key="font" metaFont="systemSemibold" size="22"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="cXK-yV-lS5">
+                                <rect key="frame" x="18" y="48" width="444" height="221"/>
+                                <textFieldCell key="cell" selectable="YES" id="Pzh-rB-aZY">
+                                    <font key="font" metaFont="system"/>
+                                    <mutableString key="title">Installation:  
+		1. Open Safari and go to Preferences
+
+		2. Go to Extensions
+
+		3. Enable Web Delay
+
+		4. Choose View &gt; Customize  Toolbar and drag Web Delay icon
+		     to your toolbar
+
+		5. To use Web Delay just press the icon and add domain which
+		    you want to see with delay. Set delay for domain.</mutableString>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="cXK-yV-lS5" firstAttribute="top" secondItem="Hqs-nl-whl" secondAttribute="bottom" constant="20" id="3js-Vw-Ecw"/>
+                            <constraint firstItem="Hqs-nl-whl" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="8mM-0k-KAv"/>
+                            <constraint firstItem="Hqs-nl-whl" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="G8d-dK-rfl"/>
+                            <constraint firstItem="cXK-yV-lS5" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="NvR-id-ehb"/>
+                            <constraint firstAttribute="trailing" secondItem="cXK-yV-lS5" secondAttribute="trailing" constant="20" id="mRV-3a-0YW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="688"/>
         </scene>
     </scenes>
 </document>
