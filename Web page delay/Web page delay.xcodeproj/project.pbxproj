@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9501E608217734680051FB9D /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501E607217734680051FB9D /* ContentManager.swift */; };
 		9537E987212C25C800402326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E986212C25C800402326 /* AppDelegate.swift */; };
 		9537E989212C25C800402326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E988212C25C800402326 /* ViewController.swift */; };
 		9537E98B212C25CA00402326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9537E98A212C25CA00402326 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9501E607217734680051FB9D /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		9537E983212C25C800402326 /* Web page delay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web page delay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9537E986212C25C800402326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9537E988212C25C800402326 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9501E605217733EE0051FB9D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9501E6062177344B0051FB9D /* ContentManager */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9501E6062177344B0051FB9D /* ContentManager */ = {
+			isa = PBXGroup;
+			children = (
+				9501E607217734680051FB9D /* ContentManager.swift */,
+			);
+			path = ContentManager;
+			sourceTree = "<group>";
+		};
 		9537E97A212C25C800402326 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +172,7 @@
 		9537E9AC212C25F000402326 /* Web delay */ = {
 			isa = PBXGroup;
 			children = (
+				9501E605217733EE0051FB9D /* Classes */,
 				9537E9AD212C25F000402326 /* SafariExtensionHandler.swift */,
 				9537E9AF212C25F000402326 /* SafariExtensionViewController.swift */,
 				9537E9B1212C25F000402326 /* SafariExtensionViewController.xib */,
@@ -321,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9537E9B0212C25F000402326 /* SafariExtensionViewController.swift in Sources */,
+				9501E608217734680051FB9D /* ContentManager.swift in Sources */,
 				9537E9AE212C25F000402326 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
