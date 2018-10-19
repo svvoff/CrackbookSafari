@@ -38,7 +38,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     override func popoverViewController() -> SFSafariExtensionViewController {
-        return SafariExtensionViewController.shared
+        let shared = SafariExtensionViewController.shared
+        shared.output = self
+        return shared
     }
 
+}
+
+extension SafariExtensionHandler: SafariExtensionViewControllerOutput {
+    
 }

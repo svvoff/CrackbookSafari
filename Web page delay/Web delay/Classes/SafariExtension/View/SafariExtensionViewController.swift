@@ -8,7 +8,17 @@
 
 import SafariServices
 
+protocol SafariExtensionViewControllerInput: class {
+
+}
+
+protocol SafariExtensionViewControllerOutput: class {
+
+}
+
 class SafariExtensionViewController: SFSafariExtensionViewController {
+
+    var output: SafariExtensionViewControllerOutput?
 
     @IBOutlet weak var tableView: NSTableView!
     
@@ -47,4 +57,8 @@ extension SafariExtensionViewController: NSTableViewDelegate {
 //        }
 //        return 0
 //    }
+}
+
+extension SafariExtensionViewController: SafariExtensionViewControllerInput {
+    
 }
