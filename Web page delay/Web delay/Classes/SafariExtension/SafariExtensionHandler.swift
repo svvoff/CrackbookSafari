@@ -12,6 +12,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
     weak var contentManager: ContentManager! = ContentManager.shared
     
+    
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
         page.getPropertiesWithCompletionHandler { [weak self ] properties in
@@ -20,8 +21,16 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
                 let url = properties?.url else {
                 return
             }
-            if self.contentManager.shouldDelay(url: url) {
-                print("HA HA it is GOOGLE")
+
+
+            if
+                let hostString = url.host,
+                let host = URL(string: hostString),
+                self.contentManager.shouldDelay(url: host) {
+                page.dispatchMessageToScript(withName: "close", userInfo: ["sadf" : "asdf"])
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5, execute: {
+                    page.reload()
+                })
             }
         }
     }

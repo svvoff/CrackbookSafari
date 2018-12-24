@@ -10,6 +10,10 @@ import Foundation
 
 final class ContentManager {
 
+    enum ContentError: Error {
+        case invalidHost
+    }
+
     static let shared = ContentManager()
 
     private(set) var keys: [ String ] {
@@ -26,18 +30,41 @@ final class ContentManager {
     }
 
     func shouldDelay(url: URL) -> Bool {
-        guard let host = url.host else {
-            return false
-        }
         let defaults = UserDefaults.standard
-        return defaults.object(forKey: host) != nil
+        return defaults.object(forKey: url.absoluteString) != nil
     }
 
-    func add(host: String) {
-        guard host.isEmpty == false else {
-            return
+    func add(host: String) throws {
+        guard
+            host.isEmpty == false,
+            let url = URL(string: host),
+            keys.contains(host) == false else {
+            throw ContentError.invalidHost
         }
-        keys.append(host)
-        UserDefaults.standard.set(host, forKey: host)
+        let h = Host(host: url)
+        if let json = try? JSONEncoder().encode(h) {
+            keys.append(host)
+            
+            UserDefaults.standard.set(json, forKey: host)
+        } else {
+            throw ContentError.invalidHost
+        }
+    }
+
+//    func url(for key: String) -> URL? {
+//        let value = UserDefaults.standard.object(forKey: key)
+//        guard let stringUrl = value as? String else {
+//            assertionFailure("Not string")
+//            return nil
+//        }
+//
+//        return URL(string: stringUrl)
+//    }
+
+    func host(for key: String) -> Host? {
+        if let hostData = UserDefaults.standard.data(forKey: key) {
+            return try? JSONDecoder().decode(Host.self, from: hostData)
+        }
+        return nil
     }
 }

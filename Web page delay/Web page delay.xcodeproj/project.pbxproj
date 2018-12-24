@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9501E608217734680051FB9D /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9501E607217734680051FB9D /* ContentManager.swift */; };
+		950C94AD2182205C00A43C92 /* DomensDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950C94AC2182205C00A43C92 /* DomensDataSource.swift */; };
+		950C94AF2182207500A43C92 /* DomenDataSourceIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950C94AE2182207500A43C92 /* DomenDataSourceIO.swift */; };
+		950C94B32182316700A43C92 /* HostTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950C94B22182316700A43C92 /* HostTextField.swift */; };
+		9512453D21CFA75E002DF47E /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9512453C21CFA75E002DF47E /* Host.swift */; };
 		9537E987212C25C800402326 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E986212C25C800402326 /* AppDelegate.swift */; };
 		9537E989212C25C800402326 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9537E988212C25C800402326 /* ViewController.swift */; };
 		9537E98B212C25CA00402326 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9537E98A212C25CA00402326 /* Assets.xcassets */; };
@@ -55,6 +59,10 @@
 
 /* Begin PBXFileReference section */
 		9501E607217734680051FB9D /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		950C94AC2182205C00A43C92 /* DomensDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomensDataSource.swift; sourceTree = "<group>"; };
+		950C94AE2182207500A43C92 /* DomenDataSourceIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomenDataSourceIO.swift; sourceTree = "<group>"; };
+		950C94B22182316700A43C92 /* HostTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostTextField.swift; sourceTree = "<group>"; };
+		9512453C21CFA75E002DF47E /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		9537E983212C25C800402326 /* Web page delay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Web page delay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9537E986212C25C800402326 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9537E988212C25C800402326 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,9 +122,43 @@
 		9501E6062177344B0051FB9D /* ContentManager */ = {
 			isa = PBXGroup;
 			children = (
+				9512453B21CFA747002DF47E /* Nodes */,
 				9501E607217734680051FB9D /* ContentManager.swift */,
 			);
 			path = ContentManager;
+			sourceTree = "<group>";
+		};
+		950C94AB2182202300A43C92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				950C94AC2182205C00A43C92 /* DomensDataSource.swift */,
+				950C94AE2182207500A43C92 /* DomenDataSourceIO.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		950C94B02182314300A43C92 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				950C94B12182314D00A43C92 /* TextField */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		950C94B12182314D00A43C92 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				950C94B22182316700A43C92 /* HostTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		9512453B21CFA747002DF47E /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				9512453C21CFA75E002DF47E /* Host.swift */,
+			);
+			path = Nodes;
 			sourceTree = "<group>";
 		};
 		9537E97A212C25C800402326 = {
@@ -185,6 +227,8 @@
 		955579E42178EFA600673700 /* SafariExtension */ = {
 			isa = PBXGroup;
 			children = (
+				950C94B02182314300A43C92 /* Views */,
+				950C94AB2182202300A43C92 /* Model */,
 				9537E9AD212C25F000402326 /* SafariExtensionHandler.swift */,
 				955579E52178EFBF00673700 /* View */,
 			);
@@ -381,7 +425,11 @@
 			files = (
 				9537E9B0212C25F000402326 /* SafariExtensionViewController.swift in Sources */,
 				9501E608217734680051FB9D /* ContentManager.swift in Sources */,
+				9512453D21CFA75E002DF47E /* Host.swift in Sources */,
+				950C94AD2182205C00A43C92 /* DomensDataSource.swift in Sources */,
 				9537E9AE212C25F000402326 /* SafariExtensionHandler.swift in Sources */,
+				950C94AF2182207500A43C92 /* DomenDataSourceIO.swift in Sources */,
+				950C94B32182316700A43C92 /* HostTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
